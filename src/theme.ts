@@ -20,6 +20,10 @@ export default createTheme({
     },
     h6: {
       fontFamily: "'Libre Baskerville', serif"
+    },
+    subtitle1: {
+      fontSize: "1.5rem",
+      fontWeight: 300
     }
   },
   components: {
@@ -45,7 +49,15 @@ export default createTheme({
       defaultProps: {
         elevation: 0,
       },
-    }
+    },
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          subtitle1: 'h3',
+          subtitle2: 'h4',
+        },
+      },
+    },
   },
   shape: {
     borderRadius: 8

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, ThemeProvider, Toolbar, Typography } from "@mui/material";
-import { Navbar } from './components';
+import { Container, ThemeProvider, Toolbar } from "@mui/material";
+import { Hero, Navbar } from './components';
 import theme from './theme';
 
 const App: React.FC = () => {
@@ -10,7 +10,7 @@ const App: React.FC = () => {
         <Container>
           <Navbar />
           <Toolbar />
-          <Typography variant="h5" component="h3">Homejam Assignment</Typography>
+          <Hero />
         </Container>
       </ThemeProvider>
     </div>
