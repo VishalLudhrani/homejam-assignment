@@ -28,7 +28,6 @@ const reviews = [
 
 const Reviews: React.FC = () => {
   const [ slidesCount, setSlidesCount ] = useState<number>(2);
-  const [ bgHeight, setBgHeight ] = useState<string>('95%');
   const [ cardWidth, setCardWidth ] = useState<string>('20rem');
 
   const sliderSettings = {
@@ -45,13 +44,11 @@ const Reviews: React.FC = () => {
   useEffect(() => {
     switch (breakpoint) {
       case 'xs':
-        setBgHeight("80%");
         setSlidesCount(1.05);
         setCardWidth("16rem");
         break;
         case 'sm':
         setCardWidth("20rem");
-        setBgHeight("80%");
         setSlidesCount(1.75);
         break;
       case 'md':
@@ -97,7 +94,7 @@ const Reviews: React.FC = () => {
         {
           reviews.map((review, pos) => {
             return (
-              <Review cardWidth={cardWidth} key={pos} {...review} bgHeight={bgHeight} />
+              <Review cardWidth={cardWidth} key={pos} {...review} bgHeight="80%" />
             )
           })
         }
