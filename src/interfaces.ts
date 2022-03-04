@@ -26,3 +26,12 @@ export interface ShowProps {
   category: string,
   bgHeight: string
 }
+
+export interface ReviewProps {
+  userImage: string,
+  username: string,
+  country: string,
+  review: string,
+  bgHeight: string,
+  cardWidth: string
+}

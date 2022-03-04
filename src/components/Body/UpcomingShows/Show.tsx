@@ -12,7 +12,7 @@ const Show: React.FC<ShowProps> = (show: ShowProps) => {
           marginTop: "-0.5rem",
           marginLeft: "2rem",
           zIndex: -1,
-          width: "21.5%",
+          width: "22%",
           height: show.bgHeight,
           borderRadius: "8px",
           background: "linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%)"
@@ -24,7 +24,7 @@ const Show: React.FC<ShowProps> = (show: ShowProps) => {
           backgroundColor: "#111229",
           color: "white",
           boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
-          margin: "0.5rem 1.25rem",
+          margin: "0.5rem 0.75rem",
           zIndex: 1
         }}
       >
@@ -48,16 +48,21 @@ const Show: React.FC<ShowProps> = (show: ShowProps) => {
           >
             {show.category}
           </Typography>
-          <Typography variant="h6">
+          <Typography
+            variant="h6"
+            sx={{
+              fontSize: { xs: "1rem", sm: "inherit" }
+            }}
+          >
             {show.speaker}
           </Typography>
         </CardContent>
         <CardActions
-          style={{
+          sx={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            margin: "auto 0.5rem"
+            margin: { xs: "none", sm: "auto 0.5rem" }
           }}
         >
           <Button size="small" sx={{ color: "#0259EB" }} >More Info <ArrowRight size="large" fill="#0259EB" /></Button>

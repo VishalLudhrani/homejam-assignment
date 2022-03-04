@@ -86,9 +86,9 @@ const UpcomingShows: React.FC = () => {
       {/* card container for shows */}
       <Slider {...sliderSettings} >
         {
-          shows.map(show => {
+          shows.map((show, pos) => {
             return (
-              <Show {...show} bgHeight={bgHeight} />
+              <Show key={pos} {...show} bgHeight={bgHeight} />
             )
           })
         }
