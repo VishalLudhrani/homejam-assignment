@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, ThemeProvider, Toolbar } from "@mui/material";
-import { Hero, Navbar } from './components';
+import { Body, Hero, Navbar } from './components';
 import theme from './theme';
 
 const App: React.FC = () => {
@@ -11,6 +11,7 @@ const App: React.FC = () => {
           <Navbar />
           <Toolbar />
           <Hero />
+          <Body />
         </Container>
       </ThemeProvider>
     </div>

@@ -19,3 +19,10 @@ export interface DashboardElementProps {
   title: string,
   subtitle: string
 }
+
+export interface ShowProps {
+  image: string,
+  speaker: string,
+  category: string,
+  bgHeight: string
+}

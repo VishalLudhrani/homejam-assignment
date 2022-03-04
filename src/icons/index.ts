@@ -5,3 +5,5 @@ export { default as Likes } from "./Likes";
 export { default as Calendar } from "./Calendar";
 export { default as Users } from "./Users";
 export { default as Views } from "./Views";
+export { default as Ticket } from "./Ticket";
+export { default as ArrowRight } from "./ArrowRight";
